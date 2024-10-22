@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imgg.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #f8f9fa;
+}
+
+/* Weather Container */
+#weather-container, #alert-container, #summary-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card styling for weather and summary */
+#weather-container div, #alert-container div, #summary-container div {
+    background: rgba(34, 34, 34, 0.8); /* Dark background with transparency */
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #e0e0e0; /* Lighter text color for better readability */
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#weather-container div:hover, #alert-container div:hover, #summary-container div:hover {
+    background: rgba(34, 34, 34, 0.9); /* Slightly darker on hover */
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #FFDD57; /* Softer yellow for headings */
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Additional styling for sections */
+h2 {
+    color: #b0b0b0; /* Light gray for secondary headings */
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #weather-container div, #alert-container div, #summary-container div {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
